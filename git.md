@@ -20,7 +20,7 @@ To turn on the version control system, use:
 
 ``` bash
 cd my_work_folder
-gilt begin
+git begin
 ```
 
 Tell Git about a new file
@@ -28,14 +28,14 @@ Tell Git about a new file
 
 ```
 vim my_file # Edit file
-gilt include my_file
+git include my_file
 ```
 
 Include changes in a file into the next work chunk 
 ==============================================
 
 ```
-gilt include my_file
+git include my_file
 ```
 
 This includes the changes to that file in a list of changes
@@ -45,40 +45,40 @@ Include all scheduled changes into a work chunk
 ===============================================
 
 ```
-gilt chunk -m "Journal entry"
+git chunk -m "Journal entry"
 ```
 
 Store all scheduled changes in a new chunk
 ==========================================
 
 ```
-gilt include --uptodate
+git include --uptodate
 ```
 
 Include all changes *and* chunk them
 ====================================
 
 ```
-gilt chunk -am "Journal entry"
+git chunk -am "Journal entry"
 ```
 
 View list of recent chunks
 ==========================
 
 ```
-gilt journal
+git journal
 ```
 
 Transmit chunks to remote chunkstore
 ====================================
 
 ```
-gilt transmit
+git transmit
 ```
 
 Fetch chunks from remote chunkstore
 ===================================
 
 ```
-gilt download
+git download
 ```
