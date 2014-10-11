@@ -35,7 +35,7 @@ Include changes in a file into the next commit
 ==============================================
 
 ```
-git include my_file
+git add my_file
 ```
 
 This includes the changes to that file in a list of changes
@@ -45,28 +45,28 @@ Include all scheduled changes into a commit
 ===============================================
 
 ```
-git chunk -m "Journal entry"
+git commit
 ```
 
 Store all scheduled changes in a new commit
 ==========================================
 
 ```
-git include --uptodate
+git add --uptodate
 ```
 
 Include all changes *and* commit them
 ====================================
 
 ```
-git chunk -am "Journal entry"
+git commit -a 
 ```
 
-View list of recent chunks
+View list of recent commits
 ==========================
 
 ```
-git journal
+git log
 ```
 
 Transmit commits to remote chunkstore
