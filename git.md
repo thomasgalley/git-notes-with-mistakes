@@ -31,7 +31,7 @@ vim my_file # Edit file
 git add my_file
 ```
 
-Include changes in a file into the next work chunk 
+Include changes in a file into the next commit 
 ==============================================
 
 ```
@@ -39,23 +39,23 @@ git include my_file
 ```
 
 This includes the changes to that file in a list of changes
-currently scheduled to be included in the next work chunk.
+currently scheduled to be included in the next commit.
 
-Include all scheduled changes into a work chunk
+Include all scheduled changes into a commit
 ===============================================
 
 ```
 git chunk -m "Journal entry"
 ```
 
-Store all scheduled changes in a new chunk
+Store all scheduled changes in a new commit
 ==========================================
 
 ```
 git include --uptodate
 ```
 
-Include all changes *and* chunk them
+Include all changes *and* commit them
 ====================================
 
 ```
@@ -69,14 +69,14 @@ View list of recent chunks
 git journal
 ```
 
-Transmit chunks to remote chunkstore
+Transmit commits to remote chunkstore
 ====================================
 
 ```
 git transmit
 ```
 
-Fetch chunks from remote chunkstore
+Fetch commits from remote chunkstore
 ===================================
 
 ```
